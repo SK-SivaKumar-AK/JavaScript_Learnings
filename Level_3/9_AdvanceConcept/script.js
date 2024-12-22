@@ -31,6 +31,22 @@ a.href = url;
 
 
 
+document.getElementById('fileInput').addEventListener('change', function () {
+   var file = this.files[0];
+   var reader = new FileReader();
+   reader.onload = function () {
+      // Create a blob
+      var blob = new Blob([new Uint8Array(this.result)], { type: file.type });
+      // Create an object URL
+      var url = URL.createObjectURL(blob);
+      // Set the object URL as the source of an image
+      document.getElementById('output').innerHTML = '<img src="' + url + '" />';
+  };
+  reader.readAsArrayBuffer(file);
+});
+
+
+
 
 
 //Object copies
