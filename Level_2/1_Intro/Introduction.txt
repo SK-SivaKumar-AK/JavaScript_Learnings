@@ -1,0 +1,55 @@
+#points
+
+
+About:blank ==> blank page in chrome.
+
+
+Fn + F12   ==> Console
+Typeof "Siva"   ==> String
+Typeof 2 ==> number
+Typeof true ==> Boolean
+
+
+let myVariable;
+undefined
+myVariable = "Siva";
+'Siva'
+typeof myVariable;
+'string'
+myVariable = 18*20;
+360
+typeof myVariable;
+'number'
+
+
+let myString = "Siva";
+undefined
+let myNumber = 2;
+undefined
+let myCombo = myNumber + myString;
+undefined
+myCombo
+'2Siva'
+typeof myCombo
+'string'
+
+
+myNumber
+2
+myNumber === 2
+true
+myNumber ===5
+false
+myNumber !== 5
+true
+let myBool = myNumber === 2
+undefined
+myBool
+true
+myBool
+true
+myBool1 = myNumber > 1
+true
+
+
+alert("Hello World");
