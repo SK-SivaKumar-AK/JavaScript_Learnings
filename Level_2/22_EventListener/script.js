@@ -24,6 +24,7 @@ const initApp = ()=>{
     view.classList.toggle("blue");
   }, false);
   div.addEventListener("click" , (event)=>{
+    //event.stopPropagation();
     //div.style.backgroundColor = "blue";
     //or
     div.classList.toggle("green");

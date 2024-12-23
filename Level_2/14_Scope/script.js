@@ -32,7 +32,7 @@ console.log(z);
 
 
 //activities
-let l = 1;
+var l = 1;
 let m = 2;
 let n = 3;
 console.log(`Global: ${l}`);
@@ -45,11 +45,14 @@ function myFun(){
     console.log(`Function: ${m}`);
     console.log(`Function: ${n}`);
     if(true){
-        let m = 5;
+        const m = 5;
         console.log(`Function_block: ${l}`);
         console.log(`Function_block: ${m}`);
         console.log(`Function_block: ${n}`);
     }
+    console.log(`Outside Function_block: ${l}`);
+    console.log(`Outside Function_block: ${m}`);
+    console.log(`Outside Function_block: ${n}`);
 }
 myFun();
 

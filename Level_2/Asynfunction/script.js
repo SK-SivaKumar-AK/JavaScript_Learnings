@@ -16,7 +16,7 @@ console.log("Third");
 
 // pending, fullfilled, rejected
 const myPromise = new Promise((resolve , reject) => {
-    const error = true;
+    const error = false;
     if(!error){
         resolve("Yes! Its resolved.");
     }else{
